@@ -47,7 +47,7 @@ const hero =
   ],
 };
 
-const faq = {
+const qa = {
   title: "My thoughts & process",
   thoughts: [
     {
@@ -94,4 +94,4 @@ const cta = {
   deployment: "https://vinio-frontend.vercel.app",
 };
 
-export { hero, faq, explanations, cta }
+export { hero, qa, explanations, cta }

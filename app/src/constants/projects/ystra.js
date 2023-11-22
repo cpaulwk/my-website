@@ -34,7 +34,7 @@ const hero = {
   ],
 };
 
-const faq = {
+const qa = {
   title: "My thoughts & process",
   thoughts: [
     {
@@ -81,4 +81,4 @@ const cta = {
   deployment: "",
 };
 
-export { hero, faq, explanations, cta }
+export { hero, qa, explanations, cta }
