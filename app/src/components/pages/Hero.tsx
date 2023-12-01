@@ -4,7 +4,7 @@ import { hero } from "@/app/src/constants/home/home";
 import SectionWrapper from "@/app/src/components/atoms/SectionWrapper";
 import { useDivWidth, useShapeSettings } from "@/app/src/hooks"
 
-export default function Home() {
+const Hero = () => {
 
   const divWidth = useDivWidth("title");
   const { shapeNumber, shapeSize } = useShapeSettings(divWidth);
@@ -42,3 +42,5 @@ export default function Home() {
     </section>
   )
 }
+
+export default Hero;
