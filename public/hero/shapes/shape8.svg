@@ -1,7 +1,4 @@
 <svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M0 0H200V200H0V0Z" fill="#F2F2F2"/>
-<path d="M0 0H100V100H0V0Z" fill="#0A1128"/>
-<path d="M0 100H100V200H0V100Z" fill="#F2F2F2"/>
-<path d="M100 100H200V200H100V100Z" fill="#05668D"/>
-<path d="M100 0H200V100H100V0Z" fill="#F2F2F2"/>
+<path d="M200 0C89.5431 0 0 89.543 0 200H75C75 130.964 130.964 75 200 75V0Z" fill="#0A1128"/>
 </svg>
