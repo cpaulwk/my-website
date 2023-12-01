@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { hero } from "@/app/src/constants/home/home";
 import SectionWrapper from "@/app/src/components/atoms/SectionWrapper";
 import { useDivWidth, useShapeSettings } from "@/app/src/hooks"
+import ViewportDisplay from '../debugger/ViewportDisplay';
 
 export default function Home() {
 
@@ -27,11 +28,12 @@ export default function Home() {
 
   return (
     <section className={`bg-white h-screen min-h-screen w-screen text-theme-light-blue flex flex-col items-center justify-center`}>
+      <ViewportDisplay />
       <SectionWrapper>
         <div className="flex flex-col gap-24 max-sm:gap-8">
           <div className="flex flex-col grow items-center w-full">
             <h1 id="title" className="2xl:text-9xl xl:text-8xl lg:text-7xl md:text-6xl sm:text-5xl xs:text-4xl 2xs:text-3xl 3xs:text-2xl">{hero.title}</h1>
-            <div className={`flex w-full justify-between max-3xs:flex-col`} style={{ width: `${divWidth}px` }}>
+            <div className={`flex w-full justify-between max-2xs:flex-col`} style={{ width: `${divWidth}px` }}>
               {heroDescription}
             </div>
           </div>
