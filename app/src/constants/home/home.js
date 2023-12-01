@@ -6,7 +6,9 @@ import {
   shape5,
   shape6,
   shape7,
-  shape8
+  shape8,
+  shape9,
+  shape10
 } from "@/public/hero/shapes";
 
 const hero = {
@@ -48,7 +50,15 @@ const hero = {
     {
       name: "Shape 8",
       icon: shape8,
-    }
+    },
+    {
+      name: "Shape 9",
+      icon: shape9,
+    },
+    {
+      name: "Shape 10",
+      icon: shape10,
+    },
   ],
 };
 
@@ -149,7 +159,7 @@ const projects = {
           color: "golden-text-gradient",
         },
       ],
-      image: ystra,
+      // image: ystra,
       source_code_link: "https://github.com/stars/cpaulwk/lists/ystra",
       project_link: "https://youtu.be/afV12tpdOWA",
     },
@@ -175,7 +185,7 @@ const projects = {
           color: "golden-text-gradient",
         },
       ],
-      image: vinio,
+      // image: vinio,
       source_code_link: "https://github.com/stars/cpaulwk/lists/vinio",
       project_link: "https://vinio-frontend.vercel.app/",
     },
@@ -201,7 +211,7 @@ const projects = {
           color: "golden-text-gradient",
         },
       ],
-      image: ystra2,
+      // image: ystra2,
       source_code_link: "https://github.com/stars/cpaulwk/lists/ystra",
       project_link: "https://github.com/stars/cpaulwk/lists/ystra",
     },
