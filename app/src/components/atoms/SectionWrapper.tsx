@@ -1,6 +1,8 @@
-export default function SectionWrapper({ children }) {
+export default function SectionWrapper({ children }: {
+  children: React.ReactNode
+}) {
   return (
-    <div className="flex justify-center items-center mt-12 mb-24 mx-15">
+    <div className="h-full w-full m-16">
       {children}
     </div>
   )
