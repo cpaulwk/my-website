@@ -11,6 +11,8 @@ import {
   shape10
 } from "@/public/hero/shapes";
 
+import { portrait } from "@/public/images";
+
 const hero = {
   title: "Paul Wen-Kai Chow",
   description: [
@@ -64,7 +66,11 @@ const hero = {
 
 const introduction = {
   title: "Who am I?",
-  description: "Hi there, my name is Paul Chow, I am a self-taught fullstack developer based in Paris, France. Beside being able to speak 3 languages: French, English and Chinese, I can also write in JavaScript mainly with ReactJS. This website showcases some of the work I have done."
+  description: ["Raised within a family of merchants, my academic journey at the business school was significantly influenced by its adjacency to an engineering institution, instilling in me a profound passion for programming and advanced technologies.", " Over a year ago, I transitioned into self-directed web development after diverse roles in prominent CAC40 corporations, refining my strategic acumen by combining technical proficiency with a comprehensive understanding of project dynamics.", "Presently, equipped with a web development certificate and a diverse professional background, I am poised to contribute substantively as a developer, adept communicator, and collaborative team member."],
+  portrait: {
+    name: "Portrait",
+    image: portrait,
+  },
 };
 
 
