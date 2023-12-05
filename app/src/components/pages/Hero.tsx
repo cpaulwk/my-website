@@ -26,9 +26,9 @@ const Hero = () => {
 
 
   return (
-    <section className={`bg-white h-screen min-h-screen w-screen text-theme-light-blue flex flex-col items-center justify-center`}>
+    <section className="bg-white min-h-screen max-w-screen text-theme-light-blue flex items-center justify-center">
       <SectionWrapper>
-        <div className="flex flex-col gap-24 max-sm:gap-8">
+        <div className="flex flex-col h-full w-full items-center gap-24 max-sm:gap-8">
           <div className="flex flex-col grow items-center w-full">
             <h1 id="title" className="2xl:text-9xl xl:text-8xl lg:text-7xl md:text-6xl sm:text-5xl xs:text-4xl 2xs:text-3xl 3xs:text-2xl">{hero.title}</h1>
             <div className={`flex w-full justify-between max-2xs:flex-col`} style={{ width: `${divWidth}px` }}>
