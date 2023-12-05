@@ -4,6 +4,7 @@
 
 h1 {
   font-family: var(--font-dela-gothic-one);
+  font-size: theme(fontSize.4xl);
 }
 
 p {
