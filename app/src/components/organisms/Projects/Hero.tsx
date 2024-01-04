@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image, { StaticImageData } from 'next/image'
 import { IconType } from 'react-icons';
 
 interface Technology {
@@ -8,7 +8,7 @@ interface Technology {
 
 interface HeroProps {
   hero: {
-    image: string;
+    image: StaticImageData;
     title: string;
     description: string;
     technologies: Technology[];

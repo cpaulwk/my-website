@@ -1,9 +1,9 @@
 import { SectionWrapper } from "@/app/src/components"
-import Image from "next/image"
+import Image, { StaticImageData } from "next/image"
 
 interface Picture {
   name: string;
-  source: string;
+  source: StaticImageData;
 }
 
 interface PreviewProps {
