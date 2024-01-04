@@ -1,6 +1,7 @@
+"use client"
 import { useEffect, useState } from "react";
 
-export const useShapeSettings = (divWidth: number) => {
+const useShapeSettings = (divWidth: number) => {
   const [shapeNumber, setShapeNumber] = useState(10);
   const [shapeSize, setShapeSize] = useState(286);
 
@@ -18,10 +19,6 @@ export const useShapeSettings = (divWidth: number) => {
       case divWidth >= 807:
         setShapeNumber(10);
         setShapeSize(161);
-        break;
-      case divWidth >= 672:
-        setShapeNumber(10);
-        setShapeSize(134);
         break;
       case divWidth >= 538:
         setShapeNumber(10);
