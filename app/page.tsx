@@ -1,4 +1,4 @@
-import { Contact, HeroHome, Introduction, Projects, Skills, ViewportDisplay } from "@/app/src/components";
+import { Contact, HeroHome, Introduction, Projects, Skills } from "@/app/src/components";
 
 const Home = () => {
 
