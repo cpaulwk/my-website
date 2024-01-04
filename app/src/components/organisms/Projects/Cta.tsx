@@ -7,8 +7,10 @@ interface Button {
 }
 
 interface CtaProps {
-  title: string;
-  buttons: Button[];
+  cta: {
+    title: string;
+    buttons: Button[];
+  }
 }
 
 const Cta = ({ cta }: CtaProps) => {
