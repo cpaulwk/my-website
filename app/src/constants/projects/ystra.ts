@@ -6,7 +6,6 @@ import {
 import {
   BiLogoJavascript,
   BiLogoMongodb,
-  BiLogoTypescript,
 } from "react-icons/bi"
 
 import {
