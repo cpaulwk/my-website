@@ -43,10 +43,8 @@ const Projects = () => {
                     <p className="text-justify">{application.description}</p>
 
                     <div className="flex w-full">
-                      <Link href={application.more_info.url}>
-                        <p className="text-theme-green font-[800]">
-                          {application.more_info.cta}
-                        </p>
+                      <Link href={application.more_info.url} className="text-theme-green font-[800]">
+                        {application.more_info.cta}
                       </Link>
                     </div>
 
