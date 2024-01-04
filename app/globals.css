@@ -7,6 +7,11 @@ h1 {
   font-size: theme(fontSize.4xl);
 }
 
+h2 {
+  font-family: var(--font-dela-gothic-one);
+  font-size: theme(fontSize.2xl);
+}
+
 p {
   font-family: var(--font-figtree);
 }
