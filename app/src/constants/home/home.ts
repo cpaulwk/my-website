@@ -11,7 +11,39 @@ import {
   shape10
 } from "@/public/hero/shapes";
 
-import { portrait } from "@/public/images";
+import {
+  FaCss3Alt,
+  FaFigma,
+  FaGitAlt,
+  FaGithub,
+  FaHtml5,
+  FaLinkedin,
+  FaNodeJs,
+  FaReact,
+} from "react-icons/fa"
+
+import {
+  BiLogoJavascript,
+  BiLogoMongodb,
+  BiLogoTailwindCss,
+  BiLogoTypescript,
+} from "react-icons/bi"
+
+import {
+  TbBrandNextjs,
+  TbBrandThreejs,
+} from "react-icons/tb"
+
+import {
+  SiExpo,
+  SiExpress,
+  SiMysql,
+  SiPrisma,
+  SiRedux,
+  SiVercel,
+} from "react-icons/si"
+
+import { portrait, vinio, ystra } from "@/public/images";
 
 const hero = {
   title: "Paul Wen-Kai Chow",
@@ -66,7 +98,20 @@ const hero = {
 
 const introduction = {
   title: "Who am I?",
-  description: ["Raised within a family of merchants, my academic journey at the business school was significantly influenced by its adjacency to an engineering institution, instilling in me a profound passion for programming and advanced technologies.", " Over a year ago, I transitioned into self-directed web development after diverse roles in prominent CAC40 corporations, refining my strategic acumen by combining technical proficiency with a comprehensive understanding of project dynamics.", "Presently, equipped with a web development certificate and a diverse professional background, I am poised to contribute substantively as a developer, adept communicator, and collaborative team member."],
+  description: [
+    {
+      name: "Paragraph 1",
+      content: "Raised within a family of merchants, my academic journey at the business school was significantly influenced by its adjacency to an engineering institution, instilling in me a profound passion for programming and advanced technologies.",
+    },
+    {
+      name: "Paragraph 2",
+      content: "Over a year ago, I transitioned into self-directed web development after diverse roles in prominent CAC40 corporations, refining my strategic acumen by combining technical proficiency with a comprehensive understanding of project dynamics.",
+    },
+    {
+      name: "Paragraph 3",
+      content: "Presently, equipped with a web development certificate and a diverse professional background, I am poised to contribute substantively as a developer, adept communicator, and collaborative team member.",
+    },
+  ],
   portrait: {
     name: "Portrait",
     image: portrait,
@@ -79,147 +124,178 @@ const skills = {
   technologies: [
     {
       name: "HTML 5",
-      icon: "html",
+      icon: FaHtml5,
     },
     {
       name: "CSS 3",
-      icon: "css",
+      icon: FaCss3Alt,
     },
     {
       name: "JavaScript",
-      icon: "javascript",
+      icon: BiLogoJavascript,
     },
     {
       name: "TypeScript",
-      icon: "typescript",
+      icon: BiLogoTypescript,
     },
     {
       name: "React JS",
-      icon: "reactjs",
+      icon: FaReact,
     },
     {
-      name: "Redux Toolkit",
-      icon: "redux",
+      name: "Express JS",
+      icon: SiExpress,
     },
     {
-      name: "Tailwind CSS",
-      icon: "tailwind",
+      name: "Redux",
+      icon: SiRedux,
+    },
+    {
+      name: "TailwindCSS",
+      icon: BiLogoTailwindCss,
     },
     {
       name: "Node JS",
-      icon: "nodejs",
+      icon: FaNodeJs,
     },
     {
       name: "MongoDB",
-      icon: "mongodb",
+      icon: BiLogoMongodb,
     },
     {
       name: "Three JS",
-      icon: "threejs",
+      icon: TbBrandThreejs,
     },
     {
-      name: "git",
-      icon: "git",
+      name: "Git",
+      icon: FaGitAlt,
     },
     {
-      name: "figma",
-      icon: "figma",
+      name: "Figma",
+      icon: FaFigma,
     },
     {
-      name: "prisma",
-      icon: "prisma",
+      name: "Prisma",
+      icon: SiPrisma,
     },
     {
-      name: "mysql",
-      icon: "mysql",
+      name: "MySQL",
+      icon: SiMysql,
     },
     {
-      name: "nextjs",
-      icon: "nextjs",
+      name: "Next JS",
+      icon: TbBrandNextjs,
     },
   ]
 };
 
 const projects = {
   title: "What I Have Done So Far",
-  projects: [
+  list: [
     {
       name: "Ystra",
       description:
         "Art-selling platform specialized in on-demand printing of AI-generated artworks, Ystra provides a unique bridge between cutting-edge technology and creative expression.",
-      tags: [
+      techs: [
         {
-          name: "reactnative",
-          color: "blue-text-gradient",
+          name: "MongoDB",
+          icon: BiLogoMongodb,
         },
         {
-          name: "mongodb",
-          color: "green-text-gradient",
+          name: "Node JS",
+          icon: FaNodeJs,
         },
         {
-          name: "tailwind",
-          color: "pink-text-gradient",
+          name: "Express JS",
+          icon: SiExpress,
         },
         {
-          name: "openai",
-          color: "golden-text-gradient",
+          name: "JavaScript",
+          icon: BiLogoJavascript,
+        },
+        {
+          name: "TypeScript",
+          icon: BiLogoTypescript,
+        },
+        {
+          name: "React Native",
+          icon: FaReact,
+        },
+        {
+          name: "Expo Go",
+          icon: SiExpo,
+        },
+        {
+          name: "Redux",
+          icon: SiRedux,
         },
       ],
-      // image: ystra,
-      source_code_link: "https://github.com/stars/cpaulwk/lists/ystra",
+      image: ystra,
+      more_info: {
+        cta: "Learn more",
+        url: "/projects/ystra",
+      },
+      repo: {
+        name: "Github",
+        url: "https://github.com/stars/cpaulwk/lists/ystra",
+        icon: FaGithub,
+      },
+      repo_icon: FaGithub,
       project_link: "https://youtu.be/afV12tpdOWA",
     },
     {
       name: "Vinio",
       description:
-        "Web application dedicated to simplify the art of wine pairing, eliminating the need for extensive wine education, Vinio provides quick and effective answers on how to pair wines.",
-      tags: [
+        "A web application dedicated to simplify the art of wine pairing, eliminating the need for extensive wine education, Vinio provides quick and effective answers on how to pair wines.",
+      techs: [
         {
-          name: "react",
-          color: "blue-text-gradient",
+          name: "Mysql",
+          icon: SiMysql,
         },
         {
-          name: "mysql",
-          color: "green-text-gradient",
+          name: "Node JS",
+          icon: FaNodeJs,
         },
         {
-          name: "tailwind",
-          color: "pink-text-gradient",
+          name: "Express JS",
+          icon: SiExpress,
         },
         {
-          name: "nextjs",
-          color: "golden-text-gradient",
+          name: "JavaScript",
+          icon: BiLogoJavascript,
+        },
+        {
+          name: "TypeScript",
+          icon: BiLogoTypescript,
+        },
+        {
+          name: "React JS",
+          icon: FaReact,
+        },
+        {
+          name: "TailwindCSS",
+          icon: BiLogoTailwindCss,
+        },
+        {
+          name: "Nextjs",
+          icon: TbBrandNextjs,
+        },
+        {
+          name: "Vercel",
+          icon: SiVercel,
         },
       ],
-      // image: vinio,
-      source_code_link: "https://github.com/stars/cpaulwk/lists/vinio",
+      image: vinio,
+      more_info: {
+        cta: "Learn more",
+        url: "/projects/vinio",
+      },
+      repo: {
+        name: "Github",
+        url: "https://github.com/stars/cpaulwk/lists/vinio",
+        icon: FaGithub,
+      },
       project_link: "https://vinio-frontend.vercel.app/",
-    },
-    {
-      name: "Ystra 2.0",
-      description:
-        "The web version of Ystra. Currently still on development. This project will be a solo project with simpler features, where user can test and leave the platform without login.",
-      tags: [
-        {
-          name: "react",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "vite",
-          color: "green-text-gradient",
-        },
-        {
-          name: "tailwind",
-          color: "pink-text-gradient",
-        },
-        {
-          name: "openai",
-          color: "golden-text-gradient",
-        },
-      ],
-      // image: ystra2,
-      source_code_link: "https://github.com/stars/cpaulwk/lists/ystra",
-      project_link: "https://github.com/stars/cpaulwk/lists/ystra",
     },
   ]
 };
@@ -229,12 +305,14 @@ const socials = {
   buttons: [
     {
       name: "Github",
-      icon: "github",
+      icon: FaGithub,
+      url: "https://github.com/cpaulwk",
     },
 
     {
       name: "LinkedIn",
-      icon: "linkedin",
+      icon: FaLinkedin,
+      url: "https://www.linkedin.com/in/paulwkchow/",
     },
   ],
 };
