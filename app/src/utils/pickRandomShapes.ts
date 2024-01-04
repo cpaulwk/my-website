@@ -1,4 +1,9 @@
-const pickRandomShapes = (array) => {
+interface Array {
+  name: string;
+  source: string;
+}
+
+const pickRandomShapes = (array: Array[]) => {
   if (array.length <= 9) {
     return;
   }
