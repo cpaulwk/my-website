@@ -236,7 +236,7 @@ const projects = {
         url: "/projects/ystra",
       },
       repo: {
-        name: "Github",
+        name: "Ystra repository",
         url: "https://github.com/stars/cpaulwk/lists/ystra",
         icon: FaGithub,
       },
@@ -291,7 +291,7 @@ const projects = {
         url: "/projects/vinio",
       },
       repo: {
-        name: "Github",
+        name: "Vinio repository",
         url: "https://github.com/stars/cpaulwk/lists/vinio",
         icon: FaGithub,
       },
