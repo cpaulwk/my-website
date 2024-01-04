@@ -20,21 +20,27 @@ const Projects = () => {
                 <div key={i} className="flex flex-col lg:basis-1/2 max-w-[85%] lg:max-w-[45%] gap-y-6">
                   <div className="flex justify-center w-full">
                     <div className="relative">
-                      <Image
-                        onClick={() => openExternalLink(application.project_link)}
-                        src={application.image}
-                        height={300}
-                        width={300}
-                        style={{ objectFit: "cover" }}
-                        alt={application.name}
-                        className="aspect-square rounded-xl hover:cursor-pointer" />
-                      <button
-                        type="button"
-                        name={application.repo.name}
-                        onClick={() => openExternalLink(application.repo.url)}
-                        className="absolute top-2 right-2 z-10 rounded-full bg-theme-white border-2 border-black p-1 hover:cursor-pointer">
+                      <a
+                        href={application.project_link}
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        <Image
+                          src={application.image}
+                          height={300}
+                          width={300}
+                          style={{ objectFit: "cover" }}
+                          alt={application.name}
+                          className="aspect-square rounded-xl hover:cursor-pointer"
+                        />
+                      </a>
+                      <a
+                        href={application.repo.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="absolute top-2 right-2 z-10 rounded-full bg-theme-white border-2 border-black p-1 hover:cursor-pointer"
+                      >
                         {application.repo.icon({ color: 'black', fontSize: '2em' })}
-                      </button>
+                      </a>
                     </div>
                   </div>
                   <div className="flex flex-col gap-y-2">
