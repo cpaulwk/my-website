@@ -30,7 +30,6 @@ const Projects = () => {
                         className="aspect-square rounded-xl hover:cursor-pointer" />
                       <button
                         type="button"
-                        id={application.repo.name}
                         name={application.repo.name}
                         onClick={() => openExternalLink(application.repo.url)}
                         className="absolute top-2 right-2 z-10 rounded-full bg-theme-white border-2 border-black p-1 hover:cursor-pointer">
