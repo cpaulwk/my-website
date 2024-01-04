@@ -21,10 +21,6 @@ import {
 
 import {
   vinio,
-  kid_in_wine_aisle,
-  mountain_of_grapes,
-  phone_holography,
-  teen_in_library,
   vinio_pairing_mode,
   vinio_suggestion_mode,
 } from "@/public/images"
