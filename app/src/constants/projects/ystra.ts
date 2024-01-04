@@ -68,7 +68,7 @@ const hero = {
       icon: SiExpo,
     },
     {
-      Name: "Redux",
+      name: "Redux",
       icon: SiRedux,
     },
   ],

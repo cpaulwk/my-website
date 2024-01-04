@@ -42,12 +42,10 @@ const navigation = {
   page: "vinio",
 }
 
-const hero =
-{
+const hero = {
   image: vinio,
   title: "Vinio",
   description: "Vinio is a web application built to simplify the art of wine pairing, eliminating the need for extensive wine education, by providing quick and effective answers on how to pair wines.",
-
   technologies: [
     {
       name: "MySQL",
