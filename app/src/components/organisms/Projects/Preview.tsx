@@ -1,7 +1,19 @@
 import { SectionWrapper } from "@/app/src/components"
 import Image from "next/image"
 
-const Preview = ({ preview }) => {
+interface Picture {
+  name: string;
+  source: string;
+}
+
+interface PreviewProps {
+  preview: {
+    title: string;
+    images: Picture[];
+  }
+}
+
+const Preview = ({ preview }: PreviewProps) => {
   return (
     <section className="bg-theme-dark-blue text-theme-white max-w-screen flex flex-col items-center justify-center">
       <SectionWrapper>
