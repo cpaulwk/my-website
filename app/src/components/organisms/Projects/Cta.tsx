@@ -1,7 +1,17 @@
 "use client"
 import { SectionWrapper } from "@/app/src/components"
 
-const Cta = ({ cta }) => {
+interface Button {
+  name: string;
+  url: string;
+}
+
+interface CtaProps {
+  title: string;
+  buttons: Button[];
+}
+
+const Cta = ({ cta }: CtaProps) => {
   const openExternalLink = (url: string) => {
     window.open(url, '_blank');
   }
