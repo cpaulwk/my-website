@@ -1,6 +1,21 @@
 import Image from 'next/image'
+import { IconType } from 'react-icons';
 
-const Hero = ({ hero }) => {
+interface Technology {
+  name: string;
+  icon: IconType;
+}
+
+interface HeroProps {
+  hero: {
+    image: string;
+    title: string;
+    description: string;
+    technologies: Technology[];
+  }
+}
+
+const Hero = ({ hero }: HeroProps) => {
   return (
     <section className="bg-theme-gray min-h-screen max-w-screen flex flex-col items-center justify-center">
       <div className="flex flex-col items-center w-full h-full gap-y-6 px-16 pb-16">
