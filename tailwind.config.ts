@@ -1,4 +1,6 @@
 import type { Config } from 'tailwindcss'
+import plugin from 'tailwindcss/plugin'
+
 
 const config: Config = {
   content: [
@@ -9,10 +11,14 @@ const config: Config = {
   theme: {
     screens: {
       '3xs': '280px',
+      skills2: '310px',
       '2xs': '400px',
       xs: '480px',
+      skills4: '490px',
       sm: '640px',
       md: '768px',
+      skills8: '850px',
+      skills4P: '950px',
       lg: '1024px',
       xl: '1280px',
       '2xl': '1600px',
@@ -25,6 +31,7 @@ const config: Config = {
       'theme-light-blue': '#05668D',
       'theme-green': '#a5be00',
       'theme-white': '#ebf2fa',
+      'theme-gray': '#333333',
     },
     fontFamily: {
       dela: ['var(--font-dela-gothic-one)'],
