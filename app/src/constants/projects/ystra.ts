@@ -271,7 +271,6 @@ const preview = {
 
 const cta = {
   title: "Visit the mobile application",
-  description: "[description]",
   buttons: [
     {
       name: "Repository",

@@ -288,7 +288,6 @@ const preview = {
 
 const cta = {
   title: "Visit the web application",
-  description: "[description]",
   buttons: [
     {
       name: "Repository",
