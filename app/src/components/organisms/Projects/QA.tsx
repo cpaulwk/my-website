@@ -1,7 +1,25 @@
 import { SectionWrapper } from "@/app/src/components"
 import Image from "next/image"
 
-const QA = ({ qa }) => {
+interface Picture {
+  name: string;
+  source: string;
+}
+
+interface Thought {
+  question: string;
+  answer: string[];
+  images: Picture[];
+}
+
+interface QAProps {
+  qa: {
+    title: string;
+    thoughts: Thought[];
+  }
+}
+
+const QA = ({ qa }: QAProps) => {
   return (
     <section className="bg-theme-white max-w-screen flex flex-col items-center justify-center">
       <SectionWrapper>
