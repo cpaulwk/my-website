@@ -3,7 +3,13 @@ import Link from 'next/link'
 import { navNavigation } from '@/app/src/constants'
 import { useNavBarSettings } from '@/app/src/hooks'
 
-const NavBar = ({ navigation }) => {
+interface NavigationProps {
+  navigation: {
+    page: string,
+  }
+}
+
+const NavBar = ({ navigation }: NavigationProps) => {
   const { nextProject, previousProject } = useNavBarSettings({ navigation, navNavigation });
 
   return (
