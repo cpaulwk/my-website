@@ -1,24 +1,27 @@
+"use client"
 import { useEffect, useState } from "react";
 
 const useViewportSize = () => {
   const [viewportSize, setViewportSize] = useState({
-    width: window.innerWidth || document.documentElement.clientWidth,
-    height: window.innerHeight || document.documentElement.clientHeight,
+    width: (typeof window !== 'undefined' && window.innerWidth) || 0,
+    height: (typeof window !== 'undefined' && window.innerHeight) || 0,
   });
 
   useEffect(() => {
     const handleResize = () => {
       setViewportSize({
-        width: window.innerWidth || document.documentElement.clientWidth,
-        height: window.innerHeight || document.documentElement.clientHeight,
-      })
+        width: (typeof window !== 'undefined' && window.innerWidth) || 0,
+        height: (typeof window !== 'undefined' && window.innerHeight) || 0,
+      });
     };
 
-    window.addEventListener("resize", handleResize);
+    if (typeof window !== 'undefined') {
+      window.addEventListener("resize", handleResize);
 
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
+      return () => {
+        window.removeEventListener("resize", handleResize);
+      };
+    }
 
   }, []);
 
