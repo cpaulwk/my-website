@@ -23,7 +23,8 @@ const Projects = () => {
                       <a
                         href={application.project_link}
                         target="_blank"
-                        rel="noopener noreferrer">
+                        rel="noopener noreferrer"
+                        aria-label={`View details for ${application.name}`}>
                         <Image
                           src={application.image}
                           height={300}
@@ -38,7 +39,7 @@ const Projects = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                         className="absolute top-2 right-2 z-10 rounded-full bg-theme-white border-2 border-black p-1 hover:cursor-pointer"
-                      >
+                        aria-label={`View details for ${application.name}`}>
                         {application.repo.icon({ color: 'black', fontSize: '2em' })}
                       </a>
                     </div>
