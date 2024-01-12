@@ -43,7 +43,7 @@ const QA = ({ qa }: QAProps) => {
                     <div className="flex flex-wrap justify-center items-center max-w-[365px] max-h-[365px] max-md:p-6">
                       {info.images.map((icon, i) => {
                         return (
-                          <div key={i} className="flex basis-1/3">
+                          <div key={i} className="flex basis-1/2">
                             <Image src={icon.source} style={{ objectFit: "contain" }} alt={icon.name} />
                           </div>
                         )

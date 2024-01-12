@@ -97,26 +97,6 @@ const qa = {
           name: "Shape 4",
           source: shape4,
         },
-        {
-          name: "Shape 6",
-          source: shape6,
-        },
-        {
-          name: "Shape 3",
-          source: shape3,
-        },
-        {
-          name: "Shape 2",
-          source: shape2,
-        },
-        {
-          name: "Shape 8",
-          source: shape8,
-        },
-        {
-          name: "Shape 7",
-          source: shape7,
-        },
       ]
     },
     {
@@ -140,26 +120,6 @@ const qa = {
         {
           name: "Shape 5",
           source: shape5,
-        },
-        {
-          name: "Shape 9",
-          source: shape9,
-        },
-        {
-          name: "Shape 7",
-          source: shape7,
-        },
-        {
-          name: "Shape 3",
-          source: shape3,
-        },
-        {
-          name: "Shape 1",
-          source: shape1,
-        },
-        {
-          name: "Shape 2",
-          source: shape2,
         },
       ]
     },
@@ -185,26 +145,6 @@ const qa = {
           name: "Shape 2",
           source: shape2,
         },
-        {
-          name: "Shape 3",
-          source: shape3,
-        },
-        {
-          name: "Shape 6",
-          source: shape6,
-        },
-        {
-          name: "Shape 5",
-          source: shape5,
-        },
-        {
-          name: "Shape 1",
-          source: shape1,
-        },
-        {
-          name: "Shape 9",
-          source: shape9,
-        },
       ]
     },
     {
@@ -228,26 +168,6 @@ const qa = {
         {
           name: "Shape 6",
           source: shape6,
-        },
-        {
-          name: "Shape 5",
-          source: shape5,
-        },
-        {
-          name: "Shape 3",
-          source: shape3,
-        },
-        {
-          name: "Shape 8",
-          source: shape8,
-        },
-        {
-          name: "Shape 1",
-          source: shape1,
-        },
-        {
-          name: "Shape 10",
-          source: shape10,
         },
       ]
     },
